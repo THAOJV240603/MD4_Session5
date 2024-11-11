@@ -26,7 +26,7 @@ public class CustomerRequestDTO {
     @NotBlank(message = "Không rỗng")
     @Size(min = 8, message = "Tối thiểu 8 ký tự")
     private String password;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     @Past(message = "Ngày sinh phải là ngày trong quá khứ")
     private LocalDate birthday;
 }
